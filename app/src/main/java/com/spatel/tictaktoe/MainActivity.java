@@ -68,7 +68,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(player1turn){
             ((Button) view).setText("X");
-            ((Button) view).setTextColor(RED);
+            final int color = 0xFF1100;
+            ((Button) view).setTextColor(color);
         }
         else{
             ((Button) view).setText("O");
