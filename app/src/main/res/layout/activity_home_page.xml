@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_design_1"
+            android:padding="18dp"
+            android:text="Play With Computer"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"></Button>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_design_1"
+            android:padding="18dp"
+            android:text="Play With Friend"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"></Button>
+
+        <EditText
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:bufferType="normal"
+            android:hint="Enter a Player name"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light"
+            android:visibility="gone"
+            android:backgroundTint="#fff"
+            android:textSize="24dp"
+            tools:visibility="visible"></EditText>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

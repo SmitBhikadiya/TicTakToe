@@ -11,6 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import static android.graphics.Color.BLACK;
+import static android.graphics.Color.BLUE;
+import static android.graphics.Color.DKGRAY;
 import static android.graphics.Color.RED;
 import static android.graphics.Color.WHITE;
 
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         txtforplayer1 = findViewById(R.id.txtPlayer1);
+        txtforplayer1.setBackgroundColor(Color.parseColor("#ff0000"));
         txtforplayer2 = findViewById(R.id.txtPlayer2);
         Button resetBtn = findViewById(R.id.btnReset);
 
@@ -67,11 +70,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if(player1turn){
+            txtforplayer1.setBackgroundColor(Color.parseColor("#232A53"));
+            txtforplayer2.setBackgroundColor(Color.parseColor("#FF0000"));
             ((Button) view).setText("X");
-            final int color = 0xFF1100;
-            ((Button) view).setTextColor(color);
+            ((Button) view).setTextColor(Color.rgb(255,17,0));
         }
         else{
+            txtforplayer1.setBackgroundColor(Color.parseColor("#FF0000"));
+            txtforplayer2.setBackgroundColor(Color.parseColor("#232A53"));
             ((Button) view).setText("O");
             ((Button) view).setTextColor(BLACK);
         }
